@@ -1,0 +1,97 @@
+/* Общие стили */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: #fff;
+}
+
+/* Основной контейнер */
+#main_container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #1c1c1c;
+}
+
+/* Стили секций */
+#section1, #section2, #section3 {
+    padding: 10px;
+    background-color: #222;
+}
+
+/* Стили блоков */
+.box {
+    background-color: #444;
+    padding: 10px;
+}
+
+.column {
+    background-color:#444; /* For visual differentiation */
+    padding: 20px; /* Optional: add some padding inside columns */
+}
+
+/* Секция 1: Расположение */
+#section1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+#box3 {
+    grid-column: span 2;
+}
+
+/* Секции 2 и 3: Расположение */
+#section2 {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    box-sizing:border-box;
+    flex:2;
+}
+
+#section3 {
+    display: grid;
+    justify-content:left;
+    width: 30%;
+    box-sizing: border-box;
+    flex:1;
+}
+
+/* Размеры блоков */
+
+p, h3 {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+
+#box6, #box7, #box8 {
+    width:auto;
+}
+
+/* Последний элемент без отступа */
+#box5 {
+    margin-right: 0;
+}
+
+/* Flex container  */
+
+.flex-container {
+    display: flex; /* Set the container to use Flexbox */
+    width: 100%; /* Full width of the parent */
+    height: 600px; /* Full viewport height for demonstration */
+    box-sizing: border-box; /* Include padding and border in width/height */
+}
+
+/* Table for Name, DOB, etc */
+
+td:first-child {
+    text-align: right; /* Align text in the first column to the left */
+    font-weight: bold;
+}
+
+td:last-child {
+    text-align: left; /* Align text in the second column to the right */
+}
